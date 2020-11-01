@@ -1,0 +1,5 @@
+<svg id="clock">
+  <text y="34%+20" x="50%" id="itis">IT IS</text>
+  <text y="42%+20" x="50%" id="minute" />
+  <text y="50%+20" x="50%" id="hour" />
+</svg>

@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~4.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/alyssadev/fitbit-wordclock/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alyssadev/fitbit-wordclock.git"
+  },
+  "fitbit": {
+    "appUUID": "35b3e91a-fce7-4563-8c72-e5661c46d214",
+    "appType": "clockface",
+    "appDisplayName": "wordclock",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [],
+    "buildTargets": [
+      "higgs",
+      "meson",
+      "gemini",
+      "mira"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "wordclock"
+      }
+    },
+    "defaultLanguage": "en-US"
+  }
+}

@@ -1,0 +1,11 @@
+#clock {
+  viewport-fill: black;
+}
+
+#clock > text {
+  font-size: 25;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  fill: white;
+}
