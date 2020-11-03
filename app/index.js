@@ -12,11 +12,12 @@ if (display.aodAvailable && appbit.permissions.granted("access_aod")) {
 // Update the clock every minute
 clock.granularity = "minutes";
 
-const minute_display = document.getElementById("minute"),
-      hour_display = document.getElementById("hour");
 
 // Update the <text> element every tick with the current time
 clock.ontick = (evt) => {
+  const minute_display = document.getElementById("minute"),
+        hour_display = document.getElementById("hour");
+  minute_display.text = "", hour_display.text = "";
   let today = evt.date;
   let hour = today.getHours(),
       minute = today.getMinutes();
@@ -40,7 +41,6 @@ clock.ontick = (evt) => {
   if (minute >= 58 || minute <= 2) { // xx:58 - xx:02
     let temp = hour_display;
     hour_display = minute_display;
-    minute_display.text = "";
   } else if (minute >= 3 && minute <= 7) { // xx:03 - xx:07
     minute_display.text = "FIVE PAST";
   } else if (minute >= 8 && minute <= 12) { // xx:08 - xx:12
